@@ -15,13 +15,16 @@ namespace PasswordManager.Models
         [Required]
         public string Email { get; set; }
         [Required]
-        public string Password { get; set; }
+        public Password UserPassword { get; set; }
 
 
 
-        public User()
+        public User(int UserID, string UserName, string Email, Password UserPassword)
         {
-
+            this.UserID = UserID;
+            this.UserName = UserName;
+            this.Email = Email;
+            this.UserPassword = UserPassword;
         }
 
 

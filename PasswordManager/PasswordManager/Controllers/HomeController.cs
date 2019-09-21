@@ -28,6 +28,11 @@ namespace PasswordManager.Controllers
             return View();
         }
         [HttpGet]
+        public IActionResult NewAccount()
+        {
+            return View();
+        }
+        [HttpGet]
         public IActionResult NewPassword()
         {
             return View();
